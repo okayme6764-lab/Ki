@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexZNRwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexaFRwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexU1WwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexXRWwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexTpWwaA.a0a36.ttf") format('truetype');
+}

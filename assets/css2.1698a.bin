@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexZNRwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexU1WwaA.a0a36.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/1Ptyg83HX_SGhgqO0yLcmjzUAuWexXRWwaA.a0a36.ttf") format('truetype');
+}
